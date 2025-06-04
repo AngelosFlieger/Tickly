@@ -5,7 +5,7 @@ app.use(express.json());
 const cors = require('cors');
 app.use(cors()); 
 
-const mongoUrl = "mongodb+srv://aggelosflieger:admin@cluster0.e2cdm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const mongoUrl = ""; //mongo url removed for credentials protection
 mongoose.connect(mongoUrl).then(() => {
     console.log("Database Connected");
 }).catch((e) => {
